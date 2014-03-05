@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Idera-recetas : Recetas para el uso y abuso de los recursos geoespaciales publicados en la Infraestructura de Datos espaciales de la República Argentina" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Idera-recetas</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/oskosk/idera-recetas">View on GitHub</a>
+
+          <h1 id="project_title">Idera-recetas</h1>
+          <h2 id="project_tagline">Recetas para el uso y abuso de los recursos geoespaciales publicados en la Infraestructura de Datos espaciales de la República Argentina</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/oskosk/idera-recetas/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/oskosk/idera-recetas/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="idera-recetas" class="anchor" href="#idera-recetas"><span class="octicon octicon-link"></span></a>idera-recetas</h1>
+
+<p>Recetas para el uso y abuso de los recursos geoespaciales publicados en la Infraestructura de Datos espaciales de la República Argentina</p>
+
+<h2>
+<a name="capas-disponibles-en-idera" class="anchor" href="#capas-disponibles-en-idera"><span class="octicon octicon-link"></span></a>Capas disponibles en IDERA</h2>
+
+<p>Las capas de datos geoespaciales son publicadas en estándares bien definidos basados en servicios web. Estos estándares se denominan <a href="https://es.wikipedia.org/wiki/Web_Map_Service">WMS</a>, <a href="https://es.wikipedia.org/wiki/Web_Feature_Service">WFS</a>. Otra estándar importante es <a href="">SLD</a></p>
+
+<h2>
+<a name="definiciones" class="anchor" href="#definiciones"><span class="octicon octicon-link"></span></a>Definiciones</h2>
+
+<h3>
+<a name="capas-base" class="anchor" href="#capas-base"><span class="octicon octicon-link"></span></a>Capas Base</h3>
+
+<p>Estas son capas que dan contexto a los datos publicados por cada participantes de IDERA. Suelen publicarse a fin de ser desplegadas sin transparencias, de manera que las capas superpuestas, sean generalmente transparentes a fin de que el usuario de las capas, no pierda contexto para su capa de interés.</p>
+
+<p>Entre las capas base que utilizo frecuentemente puedo mencionar</p>
+
+<ul>
+<li>Imágenes satelitales de Google Maps API.</li>
+<li>Imágenes satelitales de Bing Maps API.</li>
+<li>Mapa base generada por el proyecto <a href="http://openstreetmap.org">OpenStreetMap</a>.</li>
+<li>Mapa base IGN (<code>capabaseargenmap</code>), provista por el <a href="http://ign.gob.ar">Instituto Geográfico Nacional</a>.</li>
+<li>
+</ul><h4>
+<a name="capa-base-argenmap" class="anchor" href="#capa-base-argenmap"><span class="octicon octicon-link"></span></a>Capa base Argenmap</h4>
+
+<p>El IGN publica en su servicio WMS, una capa de nombre <code>capabaseargenmap</code>. Esta es una capa del tipo <em>grupo de capas</em> (así lo permite Geoserver). La capa presenta las capas publicadas por el IGN estilizadas (utilizand SLD) de manera de que puedan servir como soporte a otros datos que se deseen desplegar sobre un mapa.</p>
+
+<h3>
+<a name="capas-transparentes-u-overlays" class="anchor" href="#capas-transparentes-u-overlays"><span class="octicon octicon-link"></span></a>Capas transparentes (u Overlays)</h3>
+
+<h2>
+<a name="apps-web" class="anchor" href="#apps-web"><span class="octicon octicon-link"></span></a>Apps Web</h2>
+
+<p>Todo el código que sigue se puede copiar y pegar y es funcional sin descargar ninguna librería.</p>
+
+<h3>
+<a name="utilizando-openlayers-212" class="anchor" href="#utilizando-openlayers-212"><span class="octicon octicon-link"></span></a>Utilizando OpenLayers 2.12</h3>
+
+<h2>
+<a name="software-de-escritorio" class="anchor" href="#software-de-escritorio"><span class="octicon octicon-link"></span></a>Software de Escritorio</h2>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Idera-recetas maintained by <a href="https://github.com/oskosk">oskosk</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31718537-7");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
