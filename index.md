@@ -23,6 +23,20 @@ Las capas de datos geoespaciales son publicadas en estándares bien definidos ba
 * [Mapa con una capa WMS de IDERA](http://jsbin.com/rirojuno/1/edit).
 * [Mapa con dos capas de dos WMS distintos](http://jsbin.com/rirojuno/1/edit).
 
+##Cómo usar las recetas
+
+### Con minimo esfuezo usando un IFRAME y JS Bin
+
+Como los ejemplos son de mapas fullscreen, podés 
+
+* Entrar a [jsbin.com](http://jsbin.com).
+* Acomodar las variables y capas que necesites mostrar
+* Utilizar el link a tu Bin, pero en el modo output, *es decir, la URL de tu jsbin sin el `/edit`*
+
+### Descargarndo el zip
+
+* Te bajás el .zip de este repo.
+* 
 
 ##Algunos términos
 
