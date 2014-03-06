@@ -31,8 +31,19 @@ El IGN publica en su servicio WMS, una capa de nombre `capabaseargenmap`. Esta e
 
 ##Apps Web
 
-Todo el código que sigue se puede copiar y pegar y es funcional sin descargar ninguna librería.
+* Todo el código que sigue se puede copiar y pegar y es funcional sin descargar ninguna librería.
+* Todos los ejemplos utilizan OpenLayers o LeafletsJS, a partir de la versión hosteada en [CDNJS](http://cdnjs.com). [CDN](https://es.wikipedia.org/wiki/Content_delivery_network)s.
 
-### Utilizando OpenLayers 2.12
+### Utilizando OpenLayers 2.13.1
+
+
+* [Mapa con una capa WMS de IDERA](http://jsbin.com/rirojuno/1/edit).
+* [Mapa con dos capas de dos WMS distintos](http://jsbin.com/rirojuno/1/edit).
+
+
+http://jsbin.com/rirojuno/1/edit
+
+
+
 
 ##Software de Escritorio
