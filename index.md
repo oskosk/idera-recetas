@@ -12,6 +12,13 @@ la República Argentina
 
 Las capas de datos geoespaciales son publicadas en estándares bien definidos basados en servicios web. Estos estándares se denominan [WMS](https://es.wikipedia.org/wiki/Web_Map_Service), [WFS](https://es.wikipedia.org/wiki/Web_Feature_Service).
 
+
+Podés encontrar el listado de servicios de la IDE en:
+
+* [IDERA - Servicios IDE](http://www.idera.gob.ar/portal/node/21).
+* [JSON con las URL de los WMS de IDERA](http://mapa.ign.gob.ar/idera.jquery/servicios_wms.json),
+
+
 ##Recetas de Apps Web
 
 * Todo el código que sigue se puede copiar y pegar y es funcional sin descargar ninguna librería.
@@ -19,13 +26,37 @@ Las capas de datos geoespaciales son publicadas en estándares bien definidos ba
 
 ### Utilizando OpenLayers 2.13.1
 
+###Mapas con SRS EPSG:3857
 
-* [Mapa con una capa WMS de IDERA](http://jsbin.com/rirojuno/1/edit).
-* [Mapa con dos capas de dos WMS distintos](http://jsbin.com/rirojuno/1/edit).
+* [Mapa con una capa WMS de IDERA](ejemplos/idera-epsg3857-openlayers-una-capa-wms.html).
+* [Mapa con dos capas de dos WMS distintos](ejemplos/idera-epsg3857-openlayers-dos-capas-wms.html).
+
+###Mapas con SRS EPSG:4326
+
+* [Mapa con una capa WMS de IDERA](ejemplos/idera-epsg4326-openlayers-una-capa-wms.html).
+* [Mapa con dos capas de dos WMS distintos](ejemplos/idera-epsg4326-openlayers-dos-capas-wms.html).
 
 ##Cómo usar las recetas
 
-### Con minimo esfuezo usando un IFRAME y JS Bin
+### Si tenés un servidor web
+
+* Copiá el código del HTML y customizalo en tu servidor web
+
+
+###Si no tenés un servidor web
+
+* Abrí uno de los ejemplos
+* Abrí el código fuente del ejemplo.
+* Copiá el código fuente
+* Entrá a [JS Bin](http://jsbin.com)
+* Pegá el código fuente que copiaste, en el panel de la izquierda. Previsualizá el ejemplo
+* Customizá los parámetros `zoom`, `lat`, `lon` e `ideraLayers` (en el caso de los ejemplos con más de una capa. En los ejemplos con una sóla capa, la variable a modificar es `ideraLayer`.
+
+{% highlight html %}
+<iframe src=""></iframe>
+{% endhighlight %}
+
+ 
 
 Como los ejemplos son de mapas fullscreen, podés 
 
