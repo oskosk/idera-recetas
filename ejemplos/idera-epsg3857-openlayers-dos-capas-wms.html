@@ -23,12 +23,12 @@
     <script type="text/javascript">
       function init()
       {
-        var lon = -59;
-        var lat =-34;
-        var zoom = 5;
+        var lon = -69;
+        var lat =-36;
+        var zoom = 8;
         var point;
         var proj_4326 = new OpenLayers.Projection("EPSG:4326");
-        var map, baseLayer, ideraLayer;
+        var map, baseLayer, ideraLayers;
 
         map = new OpenLayers.Map( {
           div:'mapa',
@@ -40,14 +40,19 @@
             layers: 'capabaseargenmap',
             format: "image/png"
         });
-        ideraLayer = new OpenLayers.Layer.WMS(
-          "SIAT Mendoza - presion_antropica",
-          "http://siat.mendoza.gov.ar/geoserver/wms?",
-          {layers: 'presion_antropica', transparent:true}
-        );
+        ideraLayers = [
+          new OpenLayers.Layer.WMS(
+            "SIAT Mendoza - presion_antropica",
+            "http://siat.mendoza.gov.ar/geoserver/wms?",
+            {layers: 'presion_antropica', transparent:true}
+          ),
+          new OpenLayers.Layer.WMS(
+            "SIAT Mendoza - presion_antropica",
+            "http://geodesia.neuquen.gov.ar:8080/geoserver/wms?",
+            {layers: 'CATASTRO:redgeopro', transparent:true}            
+        )];
         map.addLayer(baseLayer);
-        map.addLayer(ideraLayer);
-        
+        map.addLayer(ideraLayers);
         point = new OpenLayers.LonLat(lon, lat);
         map.setCenter(point.transform(proj_4326, map.getProjectionObject())
           , zoom);
