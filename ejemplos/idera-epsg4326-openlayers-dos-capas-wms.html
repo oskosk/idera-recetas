@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IDERA-Recetas - </title>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/theme/default/style.css" rel="stylesheet">
+    <style type="text/css">
+      html, body, #mapa {
+        height: 100%;
+      }
+      </style>
+  </head>
+  <body onload="init()">
+    <div id="mapa"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript">
+      function init()
+      {
+        var lon = -69;
+        var lat =-36;
+        var zoom = 8;
+        var map, baseLayer, ideraLayers;
+
+        map = new OpenLayers.Map( 'mapa' );
+        baseLayer = new OpenLayers.Layer.WMS( "Mapa IGN",
+          "http://wms.ign.gob.ar/geoserver/gwc/service/wms?",
+          {
+            layers: 'capabaseargenmap',
+            format: "image/png"
+        });
+        ideraLayers = [
+          new OpenLayers.Layer.WMS(
+            "SIAT Mendoza - presion_antropica",
+            "http://siat.mendoza.gov.ar/geoserver/wms?",
+            {layers: 'presion_antropica', transparent:true}
+          ),
+          new OpenLayers.Layer.WMS(
+            "SIAT Mendoza - presion_antropica",
+            "http://geodesia.neuquen.gov.ar:8080/geoserver/wms?",
+            {layers: 'CATASTRO:redgeopro', transparent:true}            
+        )];
+        map.addLayer(baseLayer);
+        map.addLayers(ideraLayers);
+
+        map.setCenter(new OpenLayers.LonLat(lon, lat), zoom);
+        map.addControl( new OpenLayers.Control.LayerSwitcher() );        
+      }
+
+    </script>
+  </body>
+</html>
