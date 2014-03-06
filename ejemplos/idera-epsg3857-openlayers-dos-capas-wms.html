@@ -52,7 +52,7 @@
             {layers: 'CATASTRO:redgeopro', transparent:true}            
         )];
         map.addLayer(baseLayer);
-        map.addLayer(ideraLayers);
+        map.addLayers(ideraLayers);
         point = new OpenLayers.LonLat(lon, lat);
         map.setCenter(point.transform(proj_4326, map.getProjectionObject())
           , zoom);
