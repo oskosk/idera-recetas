@@ -35,7 +35,7 @@ Como los ejemplos son de mapas fullscreen, podés
 
 ### Descargarndo el zip
 
-* Te bajás el .zip de este repo.* 
+Te bajás el .zip de este repo.
 
 ##Algunos términos
 
