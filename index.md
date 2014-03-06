@@ -15,7 +15,7 @@ Las capas de datos geoespaciales son publicadas en estándares bien definidos ba
 ##Recetas de Apps Web
 
 * Todo el código que sigue se puede copiar y pegar y es funcional sin descargar ninguna librería.
-* Todos los ejemplos utilizan OpenLayers o LeafletsJS, a partir de la versión hosteada en [CDNJS](http://cdnjs.com). [CDN](https://es.wikipedia.org/wiki/Content_delivery_network)s.
+* Todos los ejemplos utilizan OpenLayers o LeafletsJS, a partir de la versión hosteada en [CDNJS](http://cdnjs.com).
 
 ### Utilizando OpenLayers 2.13.1
 
@@ -35,8 +35,7 @@ Como los ejemplos son de mapas fullscreen, podés
 
 ### Descargarndo el zip
 
-* Te bajás el .zip de este repo.
-* 
+* Te bajás el .zip de este repo.* 
 
 ##Algunos términos
 
@@ -48,10 +47,10 @@ Entre las capas base que utilizo frecuentemente puedo mencionar
 
 Provistas por grandes empresas o proyectos
 
-Estas capa sólo pueden ser utilizadas junto con servidores WMS de IDERA que soporten los Sistemas de Referencia Espacial `EPSG:3857` o `EPSG:900913`. Este sistema se suele denominar *Spherical Pseudo Mercator*.
+Estas capa sólo pueden ser utilizadas junto con servidores WMS de IDERA que soporten los Sistemas de Referencia Espacial `EPSG:3857` o `EPSG:900913`. Este sistema se suele denominar Spherical Pseudo Mercator.
 
 * Imágenes satelitales de Google Maps API.
-* Imágenes satelitales de Bing Maps API**: 
+* Imágenes satelitales de Bing Maps API: 
 * Mapa base publicado por el proyecto [OpenStreetMap](http://openstreetmap.org). Esta capa también
 * Mapa base IGN (`capabaseargenmap`), provista por el [Instituto Geográfico Nacional](http://ign.gob.ar). 
 
