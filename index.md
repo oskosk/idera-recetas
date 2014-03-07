@@ -38,10 +38,13 @@ Podés encontrar el listado de servicios de la IDE en:
 
 ##Cómo usar las recetas
 
+### Descargando el zip
+
+Te bajás el .zip de este repo y te manejás.
+
 ### Si tenés un servidor web
 
-* Copiá el código del HTML y customizalo en tu servidor web
-
+* Copiá el código HTML de los ejemplos y customizalo en tu servidor web usando un editor de texto.
 
 ###Si no tenés un servidor web
 
@@ -51,6 +54,11 @@ Podés encontrar el listado de servicios de la IDE en:
 * Entrá a [JS Bin](http://jsbin.com)
 * Pegá el código fuente que copiaste, en el panel de la izquierda. Previsualizá el ejemplo
 * Customizá los parámetros `zoom`, `lat`, `lon` e `ideraLayers` (en el caso de los ejemplos con más de una capa. En los ejemplos con una sóla capa, la variable a modificar es `ideraLayer`.
+
+## Incrustá el mapa en otro HTML.
+
+<iframe src="http://oskosk.github.io/idera-recetas/ejemplos/idera-epsg3857-openlayers-una-capa-wms.html">
+</iframe>
 
 {% highlight html %}
 <iframe src=""></iframe>
@@ -64,13 +72,11 @@ Como los ejemplos son de mapas fullscreen, podés
 * Acomodar las variables y capas que necesites mostrar
 * Utilizar el link a tu Bin, pero en el modo output, *es decir, la URL de tu jsbin sin el `/edit`*
 
-### Descargarndo el zip
 
-Te bajás el .zip de este repo.
 
 ##Algunos términos
 
-### Capa Base disponibles para usar con IDERA.
+### Capas base disponibles para usar con IDERA.
 
 Una capa base da contexto a los datos publicados por cada participantes de IDERA. Suelen publicarse a fin de ser desplegadas de manera de que para el usuario del mapa, las capas superpuestas, tenga un contexto territorial.
 
@@ -78,7 +84,7 @@ Entre las capas base que utilizo frecuentemente puedo mencionar
 
 Provistas por grandes empresas o proyectos
 
-Estas capa sólo pueden ser utilizadas junto con servidores WMS de IDERA que soporten los Sistemas de Referencia Espacial `EPSG:3857` o `EPSG:900913`. Este sistema se suele denominar Spherical Pseudo Mercator.
+Estas capas que menciono  sólo pueden ser utilizadas junto con servidores WMS de IDERA que soporten los Sistemas de Referencia Espacial `EPSG:3857` o `EPSG:900913`. Este sistema se suele denominar Spherical Pseudo Mercator. El mapa base IGN puede ser usado en varias proyecciones soportadas por el WMS del IGN.
 
 * Imágenes satelitales de Google Maps API.
 * Imágenes satelitales de Bing Maps API: 
@@ -90,11 +96,4 @@ Estas capa sólo pueden ser utilizadas junto con servidores WMS de IDERA que sop
 
 El IGN publica en su servicio WMS, una capa de nombre `capabaseargenmap`. Esta es una capa del tipo *grupo de capas* de Geoserver. Esta capa *grupal* presenta algunas de las capas publicadas por el IGN estilizadas (utilizand SLD) de manera de que puedan servir como *mapa base* para otras capas de datos.
 
-### Capas transparentes (Overlays)
 
-
-
-
-
-
-##Software de Escritorio
