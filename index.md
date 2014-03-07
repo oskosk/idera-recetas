@@ -57,11 +57,11 @@ Te bajás el .zip de este repo y te manejás.
 
 ## Incrustá el mapa en otro HTML.
 
-<iframe src="http://oskosk.github.io/idera-recetas/ejemplos/idera-epsg3857-openlayers-una-capa-wms.html">
+<iframe src="http://oskosk.github.io/idera-recetas/ejemplos/idera-epsg3857-openlayers-una-capa-wms.html" style="width:100%">
 </iframe>
 
 {% highlight html %}
-<iframe src=""></iframe>
+<iframe src="http://oskosk.github.io/idera-recetas/ejemplos/idera-epsg3857-openlayers-una-capa-wms.html"></iframe>
 {% endhighlight %}
 
  
